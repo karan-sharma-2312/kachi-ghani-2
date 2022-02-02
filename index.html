@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanha Kachi Ghani</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+    
+        <nav class="navbar">
+            <a href="benifits.html">benefits</a>
+            <a href="product.html">products</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    
+    </header>
+    
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div id="particles-js" style="background: teal;"></div>
+
+    <div class="content">
+        <img class="tilt" src="images/Pink and Black Modern Initials Logo Design.jpg" alt="">
+        <h3> Kanha <span>Kachi Ghani</span> </h3>
+        <p> 100 % <span class="typing-text"> pure wood pressed oil </span> </p>
+        <a  href="benifits.html" class="btn">Benefits of cold pressed oil </a>
+        <a  href="product.html"  class="btn">Products</a>
+        <a  href="contact.html"  class="btn">Contact</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+<!-- footer section  -->
+
+<div class="footer"><div class="note"><p><span>**Note :-</span>Free Home delivary in sikar on order above 10 liters.</p></div> Designed by <span><a href="https://www.linkedin.com/in/karan-231299-sharma/"></a> Karan Sharma </span> </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- javascript part  -->
+
+<!-- typed.js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+<!-- particles.js links  -->
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+
+<!-- vanilla-tilt.js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+<script>
+
+let menu = document.querySelector('#menu-bars');
+let header = document.querySelector('header');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    header.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    header.classList.remove('active');
+};
+
+var typed = new Typed('.typing-text', {
+    strings : ['pure wood pressed oil', 'pure wood pressed oil ', 'pure wood pressed oil ', 'pure wood pressed oil '],
+    loop : true,
+    typeSpeed : 150
+});
+
+VanillaTilt.init(document.querySelectorAll('.tilt'),{
+    max:25
+});
+
+</script>
+
+</body>
+</html>
