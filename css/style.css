@@ -176,6 +176,7 @@ section {
   cursor: pointer;
   position: relative;
   left: 91px;
+  bottom: 2px;
 }
 .btn1:hover {
   background: var(--green);
@@ -345,6 +346,7 @@ header .navbar a:hover {
 }
 
 .about .row .content .box-container .box p span {
+  font-weight: bold;
   text-decoration: none;
   color: var(--green);
 }
