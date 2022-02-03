@@ -481,6 +481,16 @@ header .navbar a:hover {
     border-radius: 0.5rem;
     background: #fff;
   }
+  .footer .note {
+    position: relative;
+    float: left;
+    font-size: x-small;
+}
+.footer .contact {
+  position: relative;
+  float: right;
+  font-size: x-small;
+}
 }
 
 @media (max-width: 450px) {
@@ -489,7 +499,7 @@ header .navbar a:hover {
   }
 
   .heading {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .contact .row .cont {
@@ -500,6 +510,16 @@ header .navbar a:hover {
     border-radius: 0.5rem;
     background: #fff;
   }
+  .footer .note {
+    position: relative;
+    float: left;
+    font-size: x-small;
+}
+.footer .contact {
+  position: relative;
+  float: right;
+  font-size: x-small;
+}
 }
 @media (max-width: 400px) {
   html {
@@ -507,7 +527,7 @@ header .navbar a:hover {
   }
 
   .heading {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .contact .row .cont {
@@ -518,6 +538,16 @@ header .navbar a:hover {
     border-radius: 0.5rem;
     background: #fff;
   }
+  .footer .note {
+    position: relative;
+    float: left;
+    font-size: x-small;
+}
+.footer .contact {
+  position: relative;
+  float: right;
+  font-size: x-small;
+}
 }
 @media (max-width: 350px) {
   html {
@@ -525,7 +555,7 @@ header .navbar a:hover {
   }
 
   .heading {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .contact .row .cont {
@@ -536,6 +566,16 @@ header .navbar a:hover {
     border-radius: 0.5rem;
     background: #fff;
   }
+  .footer .note {
+    position: relative;
+    float: left;
+    font-size: x-small;
+}
+.footer .contact {
+  position: relative;
+  float: right;
+  font-size: x-small;
+}
 }
 /* Animation for the slideshow images */
 @-webkit-keyframes imageAnimation {
@@ -724,13 +764,4 @@ header .navbar a:hover {
   opacity: 1;
 }
 
-@media screen and (max-width: 1140px) {
-  .cb-slideshow li div h3 {
-    font-size: 140px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .cb-slideshow li div h3 {
-    font-size: 80px;
-  }
-}
+
