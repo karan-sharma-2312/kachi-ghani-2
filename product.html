@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="padding-right: 5rem">
+    <header>
+      <div id="menu-bars" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="benifits.html">benefits</a>
+
+        <a href="contact.html">contact</a>
+      </nav>
+    </header>
+    <section class="products" id="product">
+      <h1 class="heading"><span> our </span> products</h1>
+
+      <div class="box-container">
+        <div class="box tilt">
+          <img src="images/black-sesame-oil.jpeg" alt="" />
+          <h3>BLACK SESAME OIL</h3>
+          <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sint tenetur adipisci explicabo nisi libero, in rerum earum. Dolor, quibusdam!</p>
+                <a href="#" class="btn">learn more</a> -->
+          <!-- <a href="product describe/blacksesame.html" class="btn">Benefit of this oil</a> -->
+        </div>
+
+        <div class="box tilt">
+          <img src="images/white-seasom.jpeg" alt="" />
+          <h3>WHITE SESAME OIL</h3>
+          <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sint tenetur adipisci explicabo nisi libero, in rerum earum. Dolor, quibusdam!</p>
+                <a href="#" class="btn">learn more</a> -->
+          <!-- <a href="#" class="btn">Benefit of this oil</a> -->
+        </div>
+
+        <div class="box tilt">
+          <img src="images/mustard-seed-oil-500x500.jpg" alt="" />
+          <h3>Black Mustard oil</h3>
+          <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sint tenetur adipisci explicabo nisi libero, in rerum earum. Dolor, quibusdam!</p>
+                <a href="#" class="btn">learn more</a> -->
+          <!-- <a href="#" class="btn">Benefit of this oil</a> -->
+        </div>
+        <div class="box tilt">
+          <img src="images/mustard-oil-500x500.jpg" alt="" />
+          <h3>Yellow Mustard oil</h3>
+          <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sint tenetur adipisci explicabo nisi libero, in rerum earum. Dolor, quibusdam!</p>
+                <a href="#" class="btn">learn more</a> -->
+          <!-- <a href="#" class="btn">Benefit of this oil</a> -->
+        </div>
+        <div class="box tilt">
+          <img src="images/groundnut-oil.jpg" alt="" />
+          <h3>Groundnut oil</h3>
+          <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sint tenetur adipisci explicabo nisi libero, in rerum earum. Dolor, quibusdam!</p>
+                <a href="#" class="btn">learn more</a> -->
+          <!-- <a href="#" class="btn">Benefit of this oil</a> -->
+        </div>
+        <div class="box tilt">
+          <img src="images/coconotoil.jpeg" alt="" />
+          <h3>Coconot oil</h3>
+          <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sint tenetur adipisci explicabo nisi libero, in rerum earum. Dolor, quibusdam!</p>
+                <a href="#" class="btn">learn more</a> -->
+          <!-- <a href="#" class="btn">Benefit of this oil</a> -->
+        </div>
+        <div class="box tilt">
+          <img src="images/alsi.jpeg" alt="" />
+          <h3>Linseed (Alsi) Oil</h3>
+          <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sint tenetur adipisci explicabo nisi libero, in rerum earum. Dolor, quibusdam!</p>
+                <a href="#" class="btn">learn more</a> -->
+          <!-- <a href="#" class="btn">Benefit of this oil</a> -->
+        </div>
+
+        <div class="box tilt">
+          <img src="images/badam.jpeg" alt="" />
+          <h3>Badam Oil</h3>
+          <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sint tenetur adipisci explicabo nisi libero, in rerum earum. Dolor, quibusdam!</p> -->
+          <!-- <a href="#" class="btn">Benefit of this oil</a> -->
+        </div>
+      </div>
+    </section>
+    <!-- footer section  -->
+
+    <div class="footer">
+      <div class="note">
+        <p><span>**Note :-</span>Home Delivary Available</p>
+      </div>
+      <div class="contact">
+        <i class="fas fa-phone"></i>
+        <a href="tel:+919983151151" style="color: black; text-transform: none"
+          >+91-9983151151</a
+        >
+      </div>
+    </div>
+
+    <!-- javascript part  -->
+
+    <!-- typed.js link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <!-- vanilla-tilt.js link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+    <script>
+      let header = document.querySelector("header");
+      let menu = document.querySelector("#menu-bars");
+
+      menu.onclick = () => {
+        menu.classList.toggle("fa-times");
+        header.classList.toggle("active");
+      };
+
+      window.onscroll = () => {
+        menu.classList.remove("fa-times");
+        header.classList.remove("active");
+      };
+
+      VanillaTilt.init(document.querySelectorAll(".tilt"), {
+        max: 25,
+      });
+    </script>
+  </body>
+</html>
