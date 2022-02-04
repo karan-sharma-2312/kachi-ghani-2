@@ -40,7 +40,7 @@ body {
 }
 
 section {
-  padding: 2rem 9%;
+  padding: 5rem 9%;
   min-height: 100vh;
 }
 .modal {
@@ -90,10 +90,10 @@ section {
   left: 0px;
   z-index: -1;
 }
-.cb-slideshow:after {
+/* .cb-slideshow:after {
   content: "";
   background: transparent url(../images/pattern.png) repeat top left;
-}
+} */
 .cb-slideshow li span {
   width: 100%;
   height: 100%;
@@ -113,6 +113,7 @@ section {
   -ms-animation: imageAnimation 24s linear infinite 0s;
   animation: imageAnimation 24s linear infinite 0s;
 }
+
 
 .cb-slideshow li:nth-child(1) span {
   background-image: url(../images/istockphoto-937757428-612x612.jpg);
@@ -160,23 +161,25 @@ section {
   border-radius: 2.5rem;
   margin-top: 1rem;
   padding: 0.8rem 3rem;
-  background: #222;
-  color: #fff;
+  background: black;
+  color: burlywood;
   font-size: 1.7rem;
   cursor: pointer;
 }
 .btn1 {
   display: inline-block;
   border-radius: 2.5rem;
-  margin-top: 1rem;
   padding: 0.8rem 3rem;
-  background: #222;
-  color: #fff;
-  font-size: 1.7rem;
+  background: black;
+  color: burlywood;
+  font-size: 1.3rem;
   cursor: pointer;
-  position: relative;
-  left: 91px;
-  bottom: 2px;
+  left: 50%;
+  top: 3%;
+  margin: 0;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .btn1:hover {
   background: var(--green);
@@ -264,12 +267,12 @@ header .navbar a:hover {
   width: 25rem;
   border-radius: 50%;
   object-fit: cover;
-  border: 1rem solid teal;
+  border: 1rem solid black;
 }
 
 .home .content h3 {
   font-size: 4rem;
-  color: black;
+  color: burlywood;
   text-transform: uppercase;
 }
 
@@ -279,10 +282,10 @@ header .navbar a:hover {
 }
 
 .home .content p {
-  color: black;
+  color: burlywood;
   font-size: 2.5rem;
   line-height: 2;
-  background-color: teal;
+  background-color: black;
   border-radius: 2.5rem;
 }
 
@@ -451,7 +454,7 @@ header .navbar a:hover {
   }
 
   section {
-    padding: 2rem;
+    padding: 5rem;
   }
 
   header {
@@ -475,8 +478,58 @@ header .navbar a:hover {
     display: block;
     font-size: 3rem;
   }
+  .cb-slideshow,
+.cb-slideshow:after {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
   .contact .row .cont {
     font-size: 18px;
+    flex: 1 1 40rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background: #fff;
+  }
+  .footer .note {
+    position: relative;
+    float: left;
+    font-size: x-small;
+}
+.footer .contact {
+  position: relative;
+  float: right;
+  font-size: x-small;
+}
+}
+@media (max-width: 650px) {
+  html {
+    font-size: 50%;
+  }
+  .home .content h3 {
+    font-size: 3.4rem;
+    color: burlywood;
+    text-transform: uppercase;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+  .cb-slideshow,
+  .cb-slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+  .contact .row .cont {
+    font-size: 10px;
     flex: 1 1 40rem;
     padding: 1rem 2rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -499,6 +552,32 @@ header .navbar a:hover {
   html {
     font-size: 50%;
   }
+  .home .content h3 {
+    font-size: 3.4rem;
+    color: burlywood;
+    text-transform: uppercase;
+  }
+  .cb-slideshow li:nth-child(1) span {
+    background-position: 100% 50%;
+  }
+  .cb-slideshow li:nth-child(2) span {
+    background-position: 70% 50%;
+  }
+  .cb-slideshow li:nth-child(3) span {
+    background-position: 70% 50%;
+  }
+  .cb-slideshow li:nth-child(4) span {
+    background-position: 100% 50%;
+  }
+  .cb-slideshow,
+.cb-slideshow:after {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
 
   .heading {
     font-size: 3rem;
@@ -527,6 +606,32 @@ header .navbar a:hover {
   html {
     font-size: 50%;
   }
+  .home .content h3 {
+    font-size: 3.4rem;
+    color: burlywood;
+    text-transform: uppercase;
+  }
+  .cb-slideshow li:nth-child(1) span {
+    background-position: 100% 50%;
+  }
+  .cb-slideshow li:nth-child(2) span {
+    background-position: 70% 50%;
+  }
+  .cb-slideshow li:nth-child(3) span {
+    background-position: 70% 50%;
+  }
+  .cb-slideshow li:nth-child(4) span {
+    background-position: 100% 50%;
+  }
+  .cb-slideshow,
+.cb-slideshow:after {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
 
   .heading {
     font-size: 3rem;
@@ -555,11 +660,36 @@ header .navbar a:hover {
   html {
     font-size: 50%;
   }
+  .home .content h3 {
+    font-size: 3.4rem;
+    color: burlywood;
+    text-transform: uppercase;
+  }
+  .cb-slideshow li:nth-child(1) span {
+    background-position: 100% 50%;
+  }
+  .cb-slideshow li:nth-child(2) span {
+    background-position: 70% 50%;
+  }
+  .cb-slideshow li:nth-child(3) span {
+    background-position: 70% 50%;
+  }
+  .cb-slideshow li:nth-child(4) span {
+    background-position: 100% 50%;
+  }
 
   .heading {
     font-size: 3rem;
   }
-
+  .cb-slideshow,
+  .cb-slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
   .contact .row .cont {
     font-size: 10px;
     flex: 1 1 40rem;
